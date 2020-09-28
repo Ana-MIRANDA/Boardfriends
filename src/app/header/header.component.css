@@ -1,0 +1,56 @@
+
+/*
+#F2BB15 jaune
+#1B80BF bleu clair
+#041926 bleu foncé*/
+
+header{
+    background: black;
+    border-bottom: 1px #F2A950 solid;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+}
+
+li a{
+    color: white;
+}
+
+li a:hover{
+    background:#1B80BF;
+    transition: 1s;
+    border-radius: 0.5em;
+}
+
+.logo{
+    height: 60px;
+    width: auto;
+}
+
+.connection{
+    margin-left:auto;
+    padding: 1em;
+    padding-bottom:0;
+    margin-bottom:-2em;
+}
+
+.connection div a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+

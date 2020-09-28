@@ -1,0 +1,38 @@
+<div class="container row">
+  <div class="col-12 col-md-4">
+    <h3>Tous les joueurs</h3>
+    <div class="input-group input-group-sm mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Search</span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="searchText" >
+      
+      
+    </div>
+
+    <div *ngFor="let player of playersList">
+      
+      <p *ngIf="player.name.toLowerCase().includes(searchText.toLowerCase())">
+        <strong>{{ player.name }}</strong> 
+        <br/>
+        {{ player.city }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-12 col-md-4">
+  <h3>Rencontre ton Board Friend !</h3>
+</div>
+<div class="col-12 col-md-4">
+  <div>
+    <h3>Top hosts</h3>
+  </div>
+  <div>
+    <h3>Nouveaux membres</h3>
+  </div>
+</div>
+

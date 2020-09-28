@@ -1,0 +1,31 @@
+/* para centar o div container dentro do header tem de se fazer display+justify+align */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-bottom: 1px #F2A950 solid;
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+}
+
+li a{
+  color: white;
+}
+
+li a:hover{
+    background:#1B80BF;
+    transition: 1s;
+    border-radius: 0.5em;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+}
